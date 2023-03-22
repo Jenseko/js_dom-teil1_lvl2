@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lvl_2_ja-dom-part1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <ul>
+        <div class="listContainer">
+            <li><a class="nav" name='atag' id="navHome" href="#home">Home</a></li>
+            <li><a class="nav" name='atag' id="navNews" href="#news">News</a></li>
+            <li><a class="nav" name='atag' id="navContact" href="#contact">Contact</a></li>
+        </div>
+        <li class="nav"><a class="active" name='atag' id="navChange">Change me</a></li>
+    </ul>
+
+    <section class="main-section">
+            <div class="output_div"></div>
+            <section class="display_results">
+                <div>
+                    <p>Key</p>
+                    <p class="key-output"></p>
+                </div>
+                <div>
+                    <p>KeyCode</p>
+                    <p class="keycode-output"></p>
+                </div>
+                <div>
+                    <p>Code</p>
+                    <p class="code-output"></p>
+                </div>
+            </section>
+    </section>
+
+    <form onsubmit="return false">
+        <select id="farbeAuswahlen">
+        <option value= "Medium Orchid" >Medium Orchid</option>
+        <option value= "Mint Cream" >Mint Cream</option>
+        <option value= "Dodger Blue" >Dodger Blue</option>
+        <option value= "Goldenrod" >Goldenrod</option>
+        <option value= "Wheat" >Wheat</option>
+        <option value= "Medium Turquoise" >Medium Turquoise</option>
+        <option value= "Moccasin" >Moccasin</option>
+        <option value= "Fire Brick" >Fire Brick</option>
+        <option value= "Lime Green" >Lime Green</option>
+        <option value= "Slate Gray" >Slate Gray</option>
+        </select>
+        <button id="button">Farbe von Liste Background farben</button>
+    </form>
+    
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
